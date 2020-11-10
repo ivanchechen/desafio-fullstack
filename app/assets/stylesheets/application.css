@@ -66,82 +66,11 @@
     opacity: 1;
   }
   
-  .baixa-icon {
-    background: url("/images/icons/baixar.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  .nav-item .nav-link:hover .baixa-icon, .baixa-icon.active{
-    opacity: 1;
-  }
-  .entrega-icon {
-    background: url("/images/icons/delivery.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  .nav-item .nav-link:hover .entrega-icon, .entrega-icon.active{
-    opacity: 1;
-  }
   
-  .finalizados-icon {
-    background: url("/images/icons/finalizado.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  .nav-item .nav-link:hover .finalizados-icon, .finalizados-icon.active{
-    opacity: 1;
-  }
   .date-range:disabled{
     cursor: not-allowed;
   }
-  
-  .nav-item .nav-link:hover .easy-log-icon, .easy-log-icon.active{
-    opacity: 1;
-  }
-  
-  .easy-price-icon {
-    background: url("/images/icons/PricingWhite.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  
-  .simulado-icon {
-    background: url("/images/icons/checklist.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  
-  .nav-item .nav-link:hover .easy-price-icon, .easy-price-icon.active{
-    opacity: 1;
-  }
-  
-  .cotado-icon {
-    background: url("/images/icons/contract.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  
-  .nav-item .nav-link:hover .cotado-icon, .cotado-icon.active{
-    opacity: 1;
-  }
-  
-  
-  .nav-item .nav-link:hover .simulado-icon, .simulado-icon.active{
-    opacity: 1;
-  }
-  
+
   .container-fluid{
     padding: 0;
   }
@@ -250,13 +179,6 @@
     }
   }
   
-  .transportadoras-hover .name{
-    display: none;
-  }
-  
-  .transportadoras-hover.active i, .navbar-alert-icon.active i {
-    color: #1D518D;
-  }
   
   .two-pills li{
     width: 50%;
@@ -271,92 +193,3 @@
   .custom-package {
     display: none;
   }
-  
-  
-  .billing-icon{
-    background: url("/images/icons/Refundwhite.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  .nav-item .nav-link:hover .billing-icon, .billing-icon.active{
-    opacity: 1;
-  }
-  .audit-icon{
-    background: url("/images/icons/EasyAudit.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  .nav-item .nav-link:hover .audit-icon, .audit-icon.active{
-    opacity: 1;
-  }
-  .profit-icon{
-    background: url("/images/icons/EasyProfit.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  
-  .stockbi-icon{
-    background: url("/images/icons/EasyStockBI.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  
-  .tax-icon{
-    background: url("/images/icons/EasyTaxRefund.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  
-  .pricing-icon{
-    background: url("/images/icons/EasyPricing.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  
-  .critical-icon{
-    background: url("/images/icons/EasyCriticalSolution.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  .log-icon {
-    background: url("/images/icons/Log.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  .nav-item .nav-link:hover .log-icon, .log-icon.active{
-    opacity: 1;
-  }
-  .loading-icon{
-    background: url("/images/icons/EasyLoading.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  .nav-item .nav-link:hover .loading-icon, .loading-icon.active{
-    opacity: 1;
-  }
-  .score-icon{
-    background: url("/images/icons/EasySupplierScore.png");
-    opacity: 0.3;
-    background-size: cover;
-    padding: 13px;
-    margin-left: 4px;
-  }
-  
