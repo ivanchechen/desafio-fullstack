@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Atividades Gerais</h1>
+
+<table class="table table-bordered data-table" id="" width="100%" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID do Projeto</th>
+      <th>ID da Atividade</th>
+      <th>Nome da Atividade</th>
+      <th>Data Início</th>
+      <th>Data de fim</th>
+      <th>Finalizada?</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activities.each do |activity| %>
+      <tr>
+        <td><%= activity.project_id %></td>
+        <td><%= activity.id %></td>
+        <td><%= activity.name %></td>
+        <td><%= activity.init_date.strftime("%d/%m/%Y") %></td>
+        <td><%= activity.end_date.strftime("%d/%m/%Y") %></td>
+        <td><%= if activity.finished "Sim" %></td>
+        <td><%= link_to 'Ver', activity %></td>
+        <td><%= link_to 'Editar', edit_activity_path(activity) %></td>
+        <td><%= link_to 'Excluir', activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

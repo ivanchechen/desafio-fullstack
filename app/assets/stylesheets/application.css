@@ -1,0 +1,362 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require sb-admin-2.min
+ *= require datatables.min
+
+ */
+
+ .sidebar {
+    transition: width 0.4s;
+    background-image: linear-gradient(180deg,#1D518D 10%,#123F76 100%);
+    /*f3d61a*/
+  }
+  
+  .sidebar, #content {
+    border-top: solid #f3d61a 5px;
+  }
+  
+  .sidebar-icon{
+    margin-right: 10px;
+  }
+  
+  hr{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    border-top: 1px solid white !important;
+  }
+  
+  .dashboard-icon{
+    background: url("/images/icons/dashboardwhite.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .cone-icon{
+    background: url("/images/icons/cone.png");
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .graph-icon{
+    background: url("/images/icons/barras.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .nav-item .nav-link:hover .graph-icon,
+  .nav-item .nav-link:hover .dashboard-icon, .dashboard-icon.active {
+    background-size: cover;
+    opacity: 1;
+  }
+  
+  .baixa-icon {
+    background: url("/images/icons/baixar.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .nav-item .nav-link:hover .baixa-icon, .baixa-icon.active{
+    opacity: 1;
+  }
+  .entrega-icon {
+    background: url("/images/icons/delivery.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .nav-item .nav-link:hover .entrega-icon, .entrega-icon.active{
+    opacity: 1;
+  }
+  
+  .finalizados-icon {
+    background: url("/images/icons/finalizado.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .nav-item .nav-link:hover .finalizados-icon, .finalizados-icon.active{
+    opacity: 1;
+  }
+  .date-range:disabled{
+    cursor: not-allowed;
+  }
+  
+  .nav-item .nav-link:hover .easy-log-icon, .easy-log-icon.active{
+    opacity: 1;
+  }
+  
+  .easy-price-icon {
+    background: url("/images/icons/PricingWhite.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .simulado-icon {
+    background: url("/images/icons/checklist.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .nav-item .nav-link:hover .easy-price-icon, .easy-price-icon.active{
+    opacity: 1;
+  }
+  
+  .cotado-icon {
+    background: url("/images/icons/contract.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .nav-item .nav-link:hover .cotado-icon, .cotado-icon.active{
+    opacity: 1;
+  }
+  
+  
+  .nav-item .nav-link:hover .simulado-icon, .simulado-icon.active{
+    opacity: 1;
+  }
+  
+  .container-fluid{
+    padding: 0;
+  }
+  
+  .content-title{
+    background-color: #FFF;
+    padding: 10px 0;
+    height: 70px;
+  }
+  
+  .general-content{
+    margin-top: 20px;
+  }
+  
+  .content-title .h2{
+    margin: 0;
+  }
+  
+  .logo-top{
+      position: absolute;
+    top: 12px;
+    left: 16px;
+  }
+  
+  .sidebar {
+    top: 70px;
+    position: relative;
+  }
+  
+  .analytic-card a:hover{
+    text-decoration: none;
+  }
+  
+  #noSearchDataTable_filter{
+    display: none;
+  }
+  
+  .cursor-pointer{
+    cursor: pointer;
+  }
+  
+  .cursor-blocked{
+    cursor: not-allowed;
+  }
+  
+  .nav-pills.three li {
+    width: 33.33%;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+      .sidebar.toggled .nav-item .nav-link span {
+      font-size: .65rem;
+      display: none !important;
+      }
+  
+      .sidebar.toggled .nav-item .nav-link {
+      text-align: center;
+      padding: .75rem 1rem;
+      width: 4.2em !important;
+      }
+  
+      .sidebar.toggled {
+      overflow: visible;
+      width: 4.2em !important;
+      }
+  
+    .sidebar .nav-item .nav-link {
+      padding: .75rem 1rem;
+    }
+  
+    .sidebar {
+      width: 11rem !important;
+    }
+  
+      .sidebar.toggled .sidebar-heading {
+      padding: 0;
+      }
+  
+    .transportadoras-hover:hover .name{
+      display: block;
+      transition: all 1s ease;
+    }
+  
+    /* Fixar o botÃ£o do Sidebar */
+    /*
+    #sidebarToggle {
+      position: fixed;
+      bottom:50%;
+      left: 14px;
+    }
+    */
+    #sidebarToggle {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content-title{
+      padding: 20px 0;
+      height: 7 0px;
+    }
+  
+    .sidebar, #content {
+      border-top: solid #f3d61a 3px;
+    }
+  }
+  
+  .transportadoras-hover .name{
+    display: none;
+  }
+  
+  .transportadoras-hover.active i, .navbar-alert-icon.active i {
+    color: #1D518D;
+  }
+  
+  .two-pills li{
+    width: 50%;
+    text-align: center;
+  }
+  
+  .fa-check-circle-delivered:before{
+    content: "\f058";
+    color: #1cc88a !important;
+  }
+  
+  .custom-package {
+    display: none;
+  }
+  
+  
+  .billing-icon{
+    background: url("/images/icons/Refundwhite.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .nav-item .nav-link:hover .billing-icon, .billing-icon.active{
+    opacity: 1;
+  }
+  .audit-icon{
+    background: url("/images/icons/EasyAudit.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .nav-item .nav-link:hover .audit-icon, .audit-icon.active{
+    opacity: 1;
+  }
+  .profit-icon{
+    background: url("/images/icons/EasyProfit.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .stockbi-icon{
+    background: url("/images/icons/EasyStockBI.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .tax-icon{
+    background: url("/images/icons/EasyTaxRefund.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .pricing-icon{
+    background: url("/images/icons/EasyPricing.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
+  .critical-icon{
+    background: url("/images/icons/EasyCriticalSolution.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .log-icon {
+    background: url("/images/icons/Log.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .nav-item .nav-link:hover .log-icon, .log-icon.active{
+    opacity: 1;
+  }
+  .loading-icon{
+    background: url("/images/icons/EasyLoading.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  .nav-item .nav-link:hover .loading-icon, .loading-icon.active{
+    opacity: 1;
+  }
+  .score-icon{
+    background: url("/images/icons/EasySupplierScore.png");
+    opacity: 0.3;
+    background-size: cover;
+    padding: 13px;
+    margin-left: 4px;
+  }
+  
